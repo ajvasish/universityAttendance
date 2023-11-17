@@ -20,7 +20,7 @@ First I will try to represent the solution recursively.
 1. The number of ways to attend classes over N days:
 If **f(n,m)** is the number of ways to attend class over **n** days where you are not allowed to miss **m** or more consecutive days.
 **f(n,m) = f(n-1, 0) + f(n-1, m+1)**
-where stopping condition is: **if m is 4 return 1** (since we cant skip 4 or more consecutive days) and **if n is 0 return 1**
+where stopping condition is: **if m is 4 return 0** (since we cant skip 4 or more consecutive days) and **if n is 0 return 1**
 
 2) The probability that you will miss your graduation ceremony.
 Use the same function above as **f(n-1, 1)**
